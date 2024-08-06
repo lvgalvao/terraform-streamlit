@@ -1,6 +1,6 @@
-FROM python:3.9
+FROM python:3.9-slim
 
-RUN pip install streamlit
+RUN pip install --no-cache-dir streamlit
 
 COPY ./app.py /app/app.py
 
